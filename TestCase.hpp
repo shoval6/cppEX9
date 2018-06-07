@@ -20,13 +20,13 @@ public:
     TestCase(string testName, ostream &os) : testName(testName), os(os),passed(0) , failed(0) {};
 
     template<class T>
-    TestCase &check_equal(T x, T y);
+    TestCase& check_equal(T x, T y);
 
     template<class T>
-    TestCase &check_different(T x, T y);
+    TestCase& check_different(T x, T y);
 
     template<class T , class R>
-    TestCase &check_function(R(*func)(T s), T x, R y);
+    TestCase& check_function(R(*func)(T s), T x, R y);
 
     template <class T>
     TestCase& check_output(T x , string str);
