@@ -16,7 +16,7 @@ private:
     void write2stream(string msg);
 
 public:
-    //static int res = passed + failed;
+
     TestCase(string testName, ostream &os) : testName(testName), os(os),passed(0) , failed(0) {};
 
     template<class T>
